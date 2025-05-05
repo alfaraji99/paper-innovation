@@ -1,0 +1,33 @@
+const video = document.getElementById('video');
+const results = document.getElementById('results');
+
+async function startCamera() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      video: {
+        facingMode: 'environment' // استخدام الكاميرا الخلفية
+      },
+      audio: false
+    });
+    video.srcObject = stream;
+    video.setAttribute('playsinline', true); // مهم لبعض الهواتف
+    video.setAttribute('muted', true);
+    video.play();
+  } catch (error) {
+    alert('⚠️ فشل في تشغيل الكاميرا: ' + error.message);
+  }
+}
+
+startCamera();
+
+function analyzeTree() {
+  results.querySelector('.result-icon').textContent = "🌴";
+  results.querySelector('p:nth-of-type(1)').innerHTML = "<strong>النوع:</strong> موز أحمر";
+  results.querySelector('p:nth-of-type(2)').innerHTML = "<strong>نسبة السليلوز:</strong> 42%";
+  results.querySelector('p:nth-of-type(3)').innerHTML = "<strong>العمر التقريبي:</strong> 6 أشهر";
+  results.classList.remove('hidden');
+}
+
+function resetAnalysis() {
+  results.classList.add('hidden');
+}

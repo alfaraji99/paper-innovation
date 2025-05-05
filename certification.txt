@@ -1,0 +1,24 @@
+---------------------------------------------------
+Here are the ownership and the certification details
+of the Paper-Innovation 1.0
+---------------------------------------------------
+
+app_name - 						Paper-Innovation
+app_alias - 					paperinnovation
+app_author_name - 				My Company
+app_author_organizational - 	My Company
+app_author_organization - 		My Company
+app_author_locality - 			My Company
+app_author_state - 				Masqat
+app_author_country - 			Oman
+app_password - 					kaXMmzR1ImX1
+app_versionName - 				versionName "1.0"
+app_versionCode - 				100
+
+---------------------------------------------------
+The certification was created by WebIntoApp.com at
+the Monday 5th of May 2025 05:49:21 AM
+
+https://www.webintoapp.com
+---------------------------------------------------
+

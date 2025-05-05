@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محلل شجرة الموز</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍌 محلل شجرة الموز</h1>
+  </header>
+
+  <main>
+    <div class="camera-container">
+      <video id="video" autoplay playsinline></video>
+    </div>
+
+    <div class="button-group">
+      <button onclick="analyzeTree()">📷 مسح الشجرة</button>
+      <button onclick="resetAnalysis()">🔄 شجرة جديدة</button>
+    </div>
+
+    <section id="results" class="hidden">
+      <h2>🌿 نتائج التحليل</h2>
+      <div class="result-icon">🌳</div>
+      <p><strong>النوع:</strong> موز كافنديش</p>
+      <p><strong>نسبة السليلوز:</strong> 38%</p>
+      <p><strong>العمر التقريبي:</strong> 8 أشهر</p>
+    </section>
+
+    <footer>
+      <p>ⓒ 2025 محلل الزراعة الذكي</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
